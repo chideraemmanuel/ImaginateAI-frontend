@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './ImageCard.module.css';
 import image from '@/assets/test.jpg';
 import saveAs from 'file-saver';
+import { FiDownload } from 'react-icons/fi';
 
 interface Props {
   imageSrc: any;
@@ -20,7 +21,10 @@ const ImageCard: React.FC<Props> = ({ imageSrc }) => {
       </div>
 
       <div className={styles.download_button}>
-        <button onClick={downloadImage}>Download</button>
+        <button onClick={downloadImage}>
+          <FiDownload />
+          <span>Download</span>
+        </button>
       </div>
     </div>
   );

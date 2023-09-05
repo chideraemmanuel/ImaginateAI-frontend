@@ -81,7 +81,8 @@
   border: 1px solid var(--gray-500);
   border-radius: 5px;
   font-size: var(--sm-font);
-  /* background-color: #fff; */
+  background-color: #fff;
+  color: #171717;
 }
 
 .options_config {

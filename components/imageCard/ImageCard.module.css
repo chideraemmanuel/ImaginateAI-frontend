@@ -21,10 +21,16 @@
 }
 
 .download_button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   background-color: var(--gray-300);
+  color: #171717;
   border: none;
   font-size: var(--base-font);
   font-size: var(--sm-font);
+  font-weight: 600;
   width: 100%;
   padding: max(0.7vw, 10px);
   cursor: pointer;

@@ -29,8 +29,9 @@ export const useGenerateImages = () => {
 
       //   console.log(response.data);
       // console.log(process.env.API_URL);
+      console.log(process.env.NEXT_PUBLIC_API_URL);
 
-      const response = await fetch(process.env.API_URL!, {
+      const response = await fetch(process.env.NEXT_PUBLIC_API_URL!, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,8 +53,10 @@ export const useGenerateImages = () => {
 
       setIsLoading(false);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       setIsLoading(false);
+      // @ts-ignore
+      alert(error.message);
     }
   };
 
